@@ -18,7 +18,7 @@
 
 ## cache inverse of a give matrix
 
- makeCacheMatrix <- function(x = matrix()) {
+makeCacheMatrix <- function(x = matrix()) {
   m<-NULL
   set<-function(y){
     x<<-y
@@ -34,7 +34,7 @@
 ## calculate inverse of get inverse from cache
 
 
- cacheSolve <- function(x, ...) {
+cacheSolve <- function(x, ...) {
         ## Return a matrix that is the inverse of 'x'
   m<-x$getinverse()
   if(!is.null(m)){
